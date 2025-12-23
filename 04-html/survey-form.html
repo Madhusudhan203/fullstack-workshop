@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customer Satisfaction Survey</title>
+</head>
+<body>
+	
+	<form method="#POST">
+		<fieldset>
+			<table>
+				<legend><b>Personal Information</b></legend>
+				<tr><td><label>Full Name:</label></td>
+				<td><input type="text" name="fullname" minlength="2" maxlength="100" placeholder="Enter Your Name"></td></tr>
+
+				<tr><td><label>Email:</label></td>
+				<td><input type="email" name="mail" required placeholder="Enter Your Email"></td></tr>
+
+				<tr><td><label>Phone:</label></td>
+				<td><input type="tel" name="phno" minlength="10" maxlength="10" placeholder="Enter Your Mobile"></td></tr>
+
+				<tr><td><label>Age Range:</label></td>
+					<td>
+						<select name="age">
+							<option>Select Your Age Range</option>
+							<option>Under 18</option>
+							<option>18-24</option>
+							<option>25-34</option>
+							<option>35-44</option>
+							<option>45-54</option>
+							<option>55+</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label>Gender</label></td>
+					<td><input type="radio" name="gender" value="Male">		Male
+						<input type="radio" name="gender" value="Femlae">Female
+						<input type="radio" name="gender" value="prefernottosay">Prefer not to say</td></tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<table>
+				<legend><b>Product Feedback</b></legend>
+				<tr>
+					<td><label><b>Products Used:</b></label></td>
+				</tr>
+					
+				<tr>
+					<td><input type="checkbox" name="product" value="A">Product A - Web Application</td>
+				</tr>
+					
+				<tr>
+					<td><input type="checkbox" name="product" value="B">Product B - Mobile App</td>
+				</tr>
+					
+				<tr>
+					<td><input type="checkbox" name="product" value="C">Product C - Desktop Software</td>
+				</tr>
+					
+				<tr>
+					<td><input type="checkbox" name="product" value="D">Product D - API Service</td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox" name="product" value="E">Product E - Cloud Storage</td>
+				</tr>
+
+				<tr>
+					<td><label><b>Primary Product:</b></label></td>
+					<td>
+						<select name="primaryprod">
+							<option>Select Your Choice</option>
+							<option>Product A - Web Application</option>
+							<option>Product B - Mobile App</option>
+							<option>Product C - Desktop Software</option>
+							<option>Product D - API Services</option>
+							<option>Product E - Cloud Storage</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label><b>How Long Have You Been a Customer?:</b></label></td>
+					<td>
+						<select name="duration">
+							<option>Select Dropdown</option>
+							<option>Less than 1 month</option>
+							<option>1-6 months</option>
+							<option>1-2 years</option>
+							<option>More than 2 years</option>
+						</select>
+					</td>
+				</tr>
+
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<table>
+				<legend><b>Satisfaction Rating</b></legend>
+
+				<tr>
+					<td>
+						<label>Overall Satisfaction</label>
+						<input type="radio" name="overall">1
+						<input type="radio" name="overall">2
+						<input type="radio" name="overall">3
+						<input type="radio" name="overall">4
+						<input type="radio" name="overall">5
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Product Quality(1-10)</label>
+						<input type="range">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label>Customer Support(1-10)</label>
+						<input type="range">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Value for Money(1-10)</label>
+						<input type="range">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Would you recommend us?</label>
+						<input type="radio" name="recommend">Definitely
+						<input type="radio" name="recommend">Probably
+						<input type="radio" name="recommend">Not Sure
+						<input type="radio" name="recommend">Probably not
+						<input type="radio" name="recommend">Definitely not
+					</td>
+				</tr>
+
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Detailed Feedback</b></legend>
+				<label><b>What do you like most?</b></label><br>
+				<textarea type="textarea" name="most" rows=4 maxlength="500"></textarea><br>
+
+				<label><b>What can we improve?</b></label><br>
+				<textarea type="textarea" name="improve" rows=4 maxlength="500"></textarea><br>
+
+				<label><b>Additional Comments</b></label><br>
+				<textarea type="textarea" name="additional" rows=6 maxlength="1000"></textarea><br>
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Contact Preferences</b></legend>
+			<label><b>Preferred Contact Method:</b></label><br>
+			<input type="checkbox" name="contact">Email<br>
+			<input type="checkbox" name="contact">Phone<br>
+			<input type="checkbox" name="contact">SMS<br>
+			<input type="checkbox" name="contact">No Contact<br>
+			<br>
+			<label><b>Best Time to Contact:</b></label><br>
+			<input type="checkbox" name="besttime">Morning (9AM-12PM)<br>
+			<input type="checkbox" name="besttime">Afternoon(12PM-5PM)<br>
+			<input type="checkbox" name="besttime">Evening(5PM-8PM)<br>
+			<br>
+			<label>Subscribe to Newsletter</label>
+			<input type="checkbox" name="newsletter">
+			<br>
+			<input type="checkbox" name="aggree" required>Aggree to Terms
+		</fieldset>
+
+		<button>Submit</button>
+		<button type="reset">Reset Form</button>
+	</form>
+
+</body>
+</html>

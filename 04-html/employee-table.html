@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Directory</title>
+</head>
+<body>
+	<header>
+		<h1>Revature</h1>
+		<label for="department">Filter by department</label>
+		<select id="department">
+			<option value="HR">HR Department</option>
+			<option value="Engineering">Engineering Department</option>
+			<option value="Marketing">Marketing Department</option>
+			<option value="Sales">Sales Department</option>
+			<option value="Finance">Finance Department</option>
+		</select>
+	</header>
+	
+	<table aria-label="Employee Directory" border="2x">
+		<caption>Company Employee Diretory - 2025</caption>	
+		<thead>
+			<colgroup>
+						<th>ID</th>
+						<th>Photo</th>
+						<th>Name</th>
+						<th>Department</th>
+						<th>Position</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Start Date</th>
+						<th>Status</th>
+			</colgroup>
+
+		</thead>
+		<tbody>
+			<tr data-department="Engineering" data-status="Active">
+				<td>1069688</td>
+				<td> <img src="D:\MADHU\DOCS\CERTIFICATES\Madhu Passport Image.png" alt="madhusudhan img" height="200" width="200"></td>
+				<td>A.Madhusudhan</td>
+				<td>Engineering Department</td>
+				<td>Junior</td>
+				<td><a href="mail to:a.madhusudhan203@gmail.com">a.madhusudhan203@gmail.com</a></td>
+				<td><a href="tel:+917013019698">7013019698</a></td>
+				<td><time datetime="12-09-2024">12 Sep 2024</time></td>
+				<td>Active</td>
+			</tr>
+
+			<tr data-department="HR" data-status="Remote">
+				<td>1069672</td>
+				<td> <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yN19yZWFsaXN0aWNfcGhvdG9fb2Zfc21pbGluZ19oYW5kc29tZV95b3VuZ19pbl8xNWExMTE1ZC0xZTBiLTQ4YjAtOGEyNi01ZDE1ZmE3Njg2MzYucG5n.png" alt="vinaykarthik img" height="200" width="200"></td>
+				<td>D.Vinay Karthik</td>
+				<td>HR Department</td>
+				<td>Intern</td>
+				<td><a href="mail to:vinaykarthik456@gmail.com">vinaykarthik456@gmail.com</a></td>
+				<td><a href="tel:+919866716324">9866716324</a></td>
+				<td><time datetime="19-08-2024">19 Aug 2024</time></td>
+				<td>Remote</td>
+			</tr>
+
+
+			<tr data-department="Marketing" data-status="On Leave">
+				<td>1069888</td>
+				<td> <img src="https://previews.123rf.com/images/szefei/szefei1306/szefei130600004/20020584-indian-man-smiling-confident-young-indian-people-standing-isolated-on-white-background.jpg" alt="pavan img" height="200" width="200"></td>
+				<td>P.Pavansai</td>
+				<td>Marketing</td>
+				<td>Senior</td>
+				<td><a href="mail to:ppavansai88@gmail.com">ppavansai88@gmail.com</a></td>
+				<td><a href="tel:+919949667176">9949667176</a></td>
+				<td><time datetime="16-05-2014">16 May 2014</time></td>
+				<td>On Leave</td>
+			</tr>
+
+
+			<tr data-department="Sales" data-status="Active">
+				<td>1069667</td>
+				<td> <img src="https://www.shutterstock.com/image-photo/young-indian-man-wearing-elegant-260nw-1448274716.jpg" alt="raghava img" height="200" width="200"></td>
+				<td>N.Raghava</td>
+				<td>Sales</td>
+				<td>Manager</td>
+				<td><a href="mail to:raghavendra43@gmail.com">raghavendra43@gmail.com</a></td>
+				<td><a href="tel:+919177304360">9177304360</a></td>
+				<td><time datetime="09-07-2014">09 July 2000</time></td>
+				<td>Active</td>
+			</tr>
+
+			<tr data-department="Finance" data-status="Active">
+				<td>1069423</td>
+				<td> <img src="https://images.unsplash.com/flagged/photo-1571367034861-e6729ad9c2d5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="azam img" height="200" width="200"></td>
+				<td>Shaik Azam</td>
+				<td>Finance</td>
+				<td>Junior</td>
+				<td><a href="mail to:skazamhussain86@gmail.com">skazamhussain86@gmail.com</a></td>
+				<td><a href="tel:+918686806538">8686806538</a></td>
+				<td><time datetime="15-12-2025">15 Dec 2025</time></td>
+				<td>Active</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="9" align="center">No of Employees:5 | IT Department:1 | HR Department:1 | Marketing: 1 | Sales:1 | Finance:1</td>
+			</tr>
+
+		</tfoot>
+	</table>
+</body>
+</html>
