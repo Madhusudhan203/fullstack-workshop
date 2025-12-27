@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,147 +8,79 @@
 </head>
 <body>
 	
-	<form method="#POST">
-		<fieldset>
-			<table>
+	<form method="POST" action="#">
+		<fieldset> 
 				<legend><b>Personal Information</b></legend>
-				<tr><td><label>Full Name:</label></td>
-				<td><input type="text" name="fullname" minlength="2" maxlength="100" placeholder="Enter Your Name"></td></tr>
+				<label>Full Name:</label>
+				<input type="text" name="fullname" minlength="2" maxlength="100" placeholder="Enter Your Name" required><br>
+				<label>Email:</label>
+				<input type="email" name="mail" required placeholder="Enter Your Email"><br>
 
-				<tr><td><label>Email:</label></td>
-				<td><input type="email" name="mail" required placeholder="Enter Your Email"></td></tr>
-
-				<tr><td><label>Phone:</label></td>
-				<td><input type="tel" name="phno" minlength="10" maxlength="10" placeholder="Enter Your Mobile"></td></tr>
-
-				<tr><td><label>Age Range:</label></td>
-					<td>
-						<select name="age">
-							<option>Select Your Age Range</option>
-							<option>Under 18</option>
-							<option>18-24</option>
-							<option>25-34</option>
-							<option>35-44</option>
-							<option>45-54</option>
-							<option>55+</option>
-						</select>
-					</td>
-				</tr>
-
-				<tr>
-					<td><label>Gender</label></td>
-					<td><input type="radio" name="gender" value="Male">		Male
-						<input type="radio" name="gender" value="Femlae">Female
-						<input type="radio" name="gender" value="prefernottosay">Prefer not to say</td></tr>
-			</table>
+				<label>Phone:</label>
+				<input type="tel" name="phno" minlength="10" maxlength="10" placeholder="Enter Your Mobile" pattern="[0-9]{10}"><br>
+				<label>Age Range:</label>
+				<select name="age">
+					<option>Select Your Age Range</option>
+					<option>Under 18</option>
+					<option>18-24</option>
+					<option>25-34</option>
+					<option>35-44</option>
+					<option>45-54</option>
+					<option>55+</option>
+				</select><br>
+				<label>Gender</label>
+					<input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="prefernottosay">Prefer not to say<br>
 		</fieldset>
 
 		<fieldset>
-			<table>
 				<legend><b>Product Feedback</b></legend>
-				<tr>
-					<td><label><b>Products Used:</b></label></td>
-				</tr>
-					
-				<tr>
-					<td><input type="checkbox" name="product" value="A">Product A - Web Application</td>
-				</tr>
-					
-				<tr>
-					<td><input type="checkbox" name="product" value="B">Product B - Mobile App</td>
-				</tr>
-					
-				<tr>
-					<td><input type="checkbox" name="product" value="C">Product C - Desktop Software</td>
-				</tr>
-					
-				<tr>
-					<td><input type="checkbox" name="product" value="D">Product D - API Service</td>
-				</tr>
-
-				<tr>
-					<td><input type="checkbox" name="product" value="E">Product E - Cloud Storage</td>
-				</tr>
-
-				<tr>
-					<td><label><b>Primary Product:</b></label></td>
-					<td>
-						<select name="primaryprod">
-							<option>Select Your Choice</option>
-							<option>Product A - Web Application</option>
-							<option>Product B - Mobile App</option>
-							<option>Product C - Desktop Software</option>
-							<option>Product D - API Services</option>
-							<option>Product E - Cloud Storage</option>
-						</select>
-					</td>
-				</tr>
-
-				<tr>
-					<td><label><b>How Long Have You Been a Customer?:</b></label></td>
-					<td>
-						<select name="duration">
-							<option>Select Dropdown</option>
-							<option>Less than 1 month</option>
-							<option>1-6 months</option>
-							<option>1-2 years</option>
-							<option>More than 2 years</option>
-						</select>
-					</td>
-				</tr>
-
-			</table>
+				<label><b>Products Used:</b></label><br>					
+				<input type="checkbox" name="product" value="A">Product A - Web Application<br>
+				<input type="checkbox" name="product" value="B">Product B - Mobile App<br>
+				<input type="checkbox" name="product" value="C">Product C - Desktop Software<br>
+				<input type="checkbox" name="product" value="D">Product D - API Service<br>
+				<input type="checkbox" name="product" value="E">Product E - Cloud Storage<br>
+				<label><b>Primary Product:</b></label>
+				<select name="primaryprod">
+					<option>Select Your Choice</option>
+					<option>Product A - Web Application</option>
+					<option>Product B - Mobile App</option>
+					<option>Product C - Desktop Software</option>
+					<option>Product D - API Services</option>
+					<option>Product E - Cloud Storage</option>
+				</select><br>
+				<label><b>How Long Have You Been a Customer?:</b></label>
+				<select name="duration">
+					<option>Select Dropdown</option>
+					<option>Less than 1 month</option>
+					<option>1-6 months</option>
+					<option>1-2 years</option>
+					<option>More than 2 years</option>
+				</select><br>
 		</fieldset>
 
 		<fieldset>
-			<table>
 				<legend><b>Satisfaction Rating</b></legend>
-
-				<tr>
-					<td>
-						<label>Overall Satisfaction</label>
-						<input type="radio" name="overall">1
-						<input type="radio" name="overall">2
-						<input type="radio" name="overall">3
-						<input type="radio" name="overall">4
-						<input type="radio" name="overall">5
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<label>Product Quality(1-10)</label>
-						<input type="range">
-					</td>
-				</tr>
-
-
-				<tr>
-					<td>
-						<label>Customer Support(1-10)</label>
-						<input type="range">
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<label>Value for Money(1-10)</label>
-						<input type="range">
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<label>Would you recommend us?</label>
-						<input type="radio" name="recommend">Definitely
-						<input type="radio" name="recommend">Probably
-						<input type="radio" name="recommend">Not Sure
-						<input type="radio" name="recommend">Probably not
-						<input type="radio" name="recommend">Definitely not
-					</td>
-				</tr>
-
-			</table>
+				<label>Overall Satisfaction</label>
+				<input type="radio" name="overall" value="1">1
+				<input type="radio" name="overall" value="2">2
+				<input type="radio" name="overall" value="3">3
+				<input type="radio" name="overall" value="4">4
+				<input type="radio" name="overall" value="5">5<br>
+				<label for="pq">Product Quality(1-10)</label>
+				<input type="range" id="pq" name="pq" min="1" max="10" value="5"><br>
+				<label for="cs">Customer Support(1-10)</label>
+				<input type="range" id="cs" name="cs" min="1" max="10" value="5"><br>
+				<label for="vm">Value for Money(1-10)</label>
+				<input type="range" id="vm" name="vm" min="1" max="10" value="5"><br>
+				<label>Would you recommend us?</label>
+				<input type="radio" name="recommend">Definitely
+				<input type="radio" name="recommend">Probably
+				<input type="radio" name="recommend">Not Sure
+				<input type="radio" name="recommend">Probably not
+				<input type="radio" name="recommend">Definitely not<br>
 		</fieldset>
 
 		<fieldset>

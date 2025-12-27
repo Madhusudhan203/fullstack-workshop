@@ -1,108 +1,147 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Employee Directory</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Directory</title>
 </head>
 <body>
-	<header>
-		<h1>Revature</h1>
-		<label for="department">Filter by department</label>
-		<select id="department">
-			<option value="HR">HR Department</option>
-			<option value="Engineering">Engineering Department</option>
-			<option value="Marketing">Marketing Department</option>
-			<option value="Sales">Sales Department</option>
-			<option value="Finance">Finance Department</option>
-		</select>
-	</header>
-	
-	<table aria-label="Employee Directory" border="2x">
-		<caption>Company Employee Diretory - 2025</caption>	
-		<thead>
-			<colgroup>
-						<th>ID</th>
-						<th>Photo</th>
-						<th>Name</th>
-						<th>Department</th>
-						<th>Position</th>
-						<th>Email</th>
-						<th>Phone</th>
-						<th>Start Date</th>
-						<th>Status</th>
-			</colgroup>
 
-		</thead>
-		<tbody>
-			<tr data-department="Engineering" data-status="Active">
-				<td>1069688</td>
-				<td> <img src="D:\MADHU\DOCS\CERTIFICATES\Madhu Passport Image.png" alt="madhusudhan img" height="200" width="200"></td>
-				<td>A.Madhusudhan</td>
-				<td>Engineering Department</td>
-				<td>Junior</td>
-				<td><a href="mail to:a.madhusudhan203@gmail.com">a.madhusudhan203@gmail.com</a></td>
-				<td><a href="tel:+917013019698">7013019698</a></td>
-				<td><time datetime="12-09-2024">12 Sep 2024</time></td>
-				<td>Active</td>
-			</tr>
+<header>
+  <h1>Revature</h1>
+  <label for="department">Filter by department:</label>
+  <select id="department">
+    <option value="">All Departments</option>
+    <option value="engineering">Engineering</option>
+    <option value="hr">HR</option>
+    <option value="marketing">Marketing</option>
+    <option value="sales">Sales</option>
+    <option value="finance">Finance</option>
+  </select>
+</header>
 
-			<tr data-department="HR" data-status="Remote">
-				<td>1069672</td>
-				<td> <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yN19yZWFsaXN0aWNfcGhvdG9fb2Zfc21pbGluZ19oYW5kc29tZV95b3VuZ19pbl8xNWExMTE1ZC0xZTBiLTQ4YjAtOGEyNi01ZDE1ZmE3Njg2MzYucG5n.png" alt="vinaykarthik img" height="200" width="200"></td>
-				<td>D.Vinay Karthik</td>
-				<td>HR Department</td>
-				<td>Intern</td>
-				<td><a href="mail to:vinaykarthik456@gmail.com">vinaykarthik456@gmail.com</a></td>
-				<td><a href="tel:+919866716324">9866716324</a></td>
-				<td><time datetime="19-08-2024">19 Aug 2024</time></td>
-				<td>Remote</td>
-			</tr>
+<table aria-label="Employee Directory" border="2">
+  <caption>Company Employee Directory - 2025</caption>
 
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Photo</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Position</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
 
-			<tr data-department="Marketing" data-status="On Leave">
-				<td>1069888</td>
-				<td> <img src="https://previews.123rf.com/images/szefei/szefei1306/szefei130600004/20020584-indian-man-smiling-confident-young-indian-people-standing-isolated-on-white-background.jpg" alt="pavan img" height="200" width="200"></td>
-				<td>P.Pavansai</td>
-				<td>Marketing</td>
-				<td>Senior</td>
-				<td><a href="mail to:ppavansai88@gmail.com">ppavansai88@gmail.com</a></td>
-				<td><a href="tel:+919949667176">9949667176</a></td>
-				<td><time datetime="16-05-2014">16 May 2014</time></td>
-				<td>On Leave</td>
-			</tr>
+  <tbody>
+    <tr data-department="engineering" data-status="active">
+      <td>1069688</td>
+      <td><img src="https://images.pexels.com/photos/30004315/pexels-photo-30004315/free-photo-of-professional-headshot-of-smiling-businessman.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Photo of A. Madhusudhan" width="80"></td>
+      <td>A. Madhusudhan</td>
+      <td>Engineering</td>
+      <td>Junior Developer</td>
+      <td><a href="mailto:a.madhusudhan203@gmail.com">a.madhusudhan203@gmail.com</a></td>
+      <td><a href="tel:+917013019698">7013019698</a></td>
+      <td><time datetime="2024-09-12">12 Sep 2024</time></td>
+      <td><span class="status active">Active</span></td>
+    </tr>
 
+    <tr data-department="hr" data-status="remote">
+      <td>1069672</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBJeOeRoMMmig98EuUG9jUVjVdivz7tpJxQ&s" alt="Photo of D. Vinay Karthik" width="80"></td>
+      <td>D. Vinay Karthik</td>
+      <td>HR</td>
+      <td>Intern</td>
+      <td><a href="mailto:vinaykarthik456@gmail.com">vinaykarthik456@gmail.com</a></td>
+      <td><a href="tel:+919866716324">9866716324</a></td>
+      <td><time datetime="2024-08-19">19 Aug 2024</time></td>
+      <td><span class="status remote">Remote</span></td>
+    </tr>
 
-			<tr data-department="Sales" data-status="Active">
-				<td>1069667</td>
-				<td> <img src="https://www.shutterstock.com/image-photo/young-indian-man-wearing-elegant-260nw-1448274716.jpg" alt="raghava img" height="200" width="200"></td>
-				<td>N.Raghava</td>
-				<td>Sales</td>
-				<td>Manager</td>
-				<td><a href="mail to:raghavendra43@gmail.com">raghavendra43@gmail.com</a></td>
-				<td><a href="tel:+919177304360">9177304360</a></td>
-				<td><time datetime="09-07-2014">09 July 2000</time></td>
-				<td>Active</td>
-			</tr>
+    <tr data-department="marketing" data-status="leave">
+      <td>1069888</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvIUEqA5SsTOVllzCRr5D9crY0mjzv0R5KA&s" alt="Photo of P. Pavansai" width="80"></td>
+      <td>P. Pavansai</td>
+      <td>Marketing</td>
+      <td>Senior</td>
+      <td><a href="mailto:ppavansai88@gmail.com">ppavansai88@gmail.com</a></td>
+      <td><a href="tel:+919949667176">9949667176</a></td>
+      <td><time datetime="2014-05-16">16 May 2014</time></td>
+      <td><span class="status leave">On Leave</span></td>
+    </tr>
 
-			<tr data-department="Finance" data-status="Active">
-				<td>1069423</td>
-				<td> <img src="https://images.unsplash.com/flagged/photo-1571367034861-e6729ad9c2d5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="azam img" height="200" width="200"></td>
-				<td>Shaik Azam</td>
-				<td>Finance</td>
-				<td>Junior</td>
-				<td><a href="mail to:skazamhussain86@gmail.com">skazamhussain86@gmail.com</a></td>
-				<td><a href="tel:+918686806538">8686806538</a></td>
-				<td><time datetime="15-12-2025">15 Dec 2025</time></td>
-				<td>Active</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="9" align="center">No of Employees:5 | IT Department:1 | HR Department:1 | Marketing: 1 | Sales:1 | Finance:1</td>
-			</tr>
+    <tr data-department="sales" data-status="active">
+      <td>1069667</td>
+      <td><img src="https://t4.ftcdn.net/jpg/11/57/96/41/360_F_1157964172_0yMki0fAGPioGkpwJOb6VQl7YWBXwEd9.jpg" alt="Photo of N. Raghava" width="80"></td>
+      <td>N. Raghava</td>
+      <td>Sales</td>
+      <td>Manager</td>
+      <td><a href="mailto:raghavendra43@gmail.com">raghavendra43@gmail.com</a></td>
+      <td><a href="tel:+919177304360">9177304360</a></td>
+      <td><time datetime="2000-07-09">09 Jul 2000</time></td>
+      <td><span class="status active">Active</span></td>
+    </tr>
 
-		</tfoot>
-	</table>
+    <tr data-department="finance" data-status="active">
+      <td>1069423</td>
+      <td><img src="https://easy-peasy.ai/cdn-cgi/image/quality=70,format=auto,width=500/https://media.easy-peasy.ai/27feb2bb-aeb4-4a83-9fb6-8f3f2a15885e/6691144d-15a5-40c5-abe0-5a4082e75bc0.png" alt="Photo of Shaik Azam" width="80"></td>
+      <td>Shaik Azam</td>
+      <td>Finance</td>
+      <td>Junior</td>
+      <td><a href="mailto:skazamhussain86@gmail.com">skazamhussain86@gmail.com</a></td>
+      <td><a href="tel:+918686806538">8686806538</a></td>
+      <td><time datetime="2025-12-15">15 Dec 2025</time></td>
+      <td><span class="status active">Active</span></td>
+    </tr>
+
+     <tr data-department="Engineering" data-status="On Leave">
+      <td>1069355</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnqjD7EHW3tWZCcO5hCirmznvNguw0Sx-KQ&s" alt="Photo of Arun" width="80"></td>
+      <td>S.Arun</td>
+      <td>Engineering</td>
+      <td>Senior</td>
+      <td><a href="mailto:sarunkumar23@gmail.com">sarunkumar23@gmail.com</a></td>
+      <td><a href="tel:+919876543210">9876543210</a></td>
+      <td><time datetime="2003-11-28">11 Nov 2003</time></td>
+      <td><span class="status leave">On Leave</span></td>
+    </tr>
+
+     <tr data-department="HR" data-status="Remote">
+      <td>1069398</td>
+      <td><img src="https://files.idyllic.app/files/static/152032?width=640&optimizer=image" alt="Photo of Rahul" width="80"></td>
+      <td>T.Rahul</td>
+      <td>HR</td>
+      <td>Junior</td>
+      <td><a href="mailto:trahul43@gmail.com">trahul43@gmail.com</a></td>
+      <td><a href="tel:+918121184454">8121184454</a></td>
+      <td><time datetime="2023-05-10">10 May 2023</time></td>
+      <td><span class="status remote">Remote</span></td>
+    </tr>
+
+     <tr data-department="marketing" data-status="active">
+      <td>1069469</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpT_ljsPtUre6DcAfZvx-obUMoXfNR8U3x-Q&s" alt="Photo of Sai" width="80"></td>
+      <td>B.Sai</td>
+      <td>Marketing</td>
+      <td>Junior</td>
+      <td><a href="mailto:bsaiteja23@gmail.com">bsaiteja23@gmail.com</a></td>
+      <td><a href="tel:+919492229176">9492229176</a></td>
+      <td><time datetime="2024-08-30">30 Aug 2024</time></td>
+      <td><span class="status active">Active</span></td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="9" align="center">Total Employees: 8 | Engineering: 2 | HR: 2 | Marketing: 2 | Sales: 1 | Finance: 1</td>
+    </tr>
+  </tfoot>
+</table>
+
 </body>
 </html>
