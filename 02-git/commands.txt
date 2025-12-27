@@ -1,0 +1,43 @@
+mkdir git-exercise
+
+cd git-exercise
+
+git init
+
+nano calculator.py
+
+git add calculator.py
+
+git commit -m "initial version of calculator"
+
+git branch feature/multiply
+
+git checkout feature/multiply
+
+echo "def multiply(a,b):
+	return a*b" >> calculator.py
+
+git add calculator.py
+
+git commit -m "Added multiply function"
+
+git checkout main
+
+echo "def divide(a,b):
+	if b==0:
+		raise ValueError(\"Cannot divide by Zero\")
+	return a/b" >> calculator.py
+
+git add calculator.py
+
+git commit -m "Added divide function"
+
+git merge feature/multiply
+
+git add calculator.py
+
+git commit -m "Merge feature/multiply to main and resolve conflict"
+
+git log
+
+git diff main feature/multiply
